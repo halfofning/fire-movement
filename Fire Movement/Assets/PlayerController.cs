@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Vector3 direction = Player.instance.hmdTransform.TransformDirection(new Vector3(moveInput.axis.x, 0, moveInput.axis.y));
-        speed = (float)(speedInput.axis * 1.2);
+        speed = (float)(speedInput.axis * 1.5);
         characterController.Move(speed * Time.deltaTime * Vector3.ProjectOnPlane(direction, Vector3.up) - new Vector3(0, 9.81f, 0) * Time.deltaTime);
     }
 }
