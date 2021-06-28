@@ -15,11 +15,11 @@ C:/Users/user/Documents/GitHub/fire-movement/Fire Movement
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50567
+49869
 Successfully changed project path to: C:/Users/user/Documents/GitHub/fire-movement/Fire Movement
 C:/Users/user/Documents/GitHub/fire-movement/Fire Movement
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 43.70 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 48.00 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -35,412 +35,326 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001680 seconds.
+Registered in 0.001895 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 38.03 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 43.94 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.976 seconds
+- Completed reload, in  1.012 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004328 seconds.
+Registered in 0.004835 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.438 seconds
+- Completed reload, in  1.554 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2101 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 100.0 MB.
-System memory in use after: 100.1 MB.
+Unloading 2117 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.2 MB.
+System memory in use after: 103.3 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2544.
-Total: 1.989000 ms (FindLiveObjects: 0.193000 ms CreateObjectMapping: 0.100800 ms MarkObjects: 1.639900 ms  DeleteObjects: 0.054000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Alstrainfinite/KitchenAppliances/Prefabs/Coffee Maker.prefab
-  artifactKey: Guid(026bbb898b925f54b9fc6523b72e5933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alstrainfinite/KitchenAppliances/Prefabs/Coffee Maker.prefab using Guid(026bbb898b925f54b9fc6523b72e5933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59da813984f4e323b0291985ff76d88') in 0.102478 seconds
-  Import took 0.105255 seconds .
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2563.
+Total: 2.426200 ms (FindLiveObjects: 0.218800 ms CreateObjectMapping: 0.095900 ms MarkObjects: 2.035100 ms  DeleteObjects: 0.075200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Alstrainfinite/KitchenAppliances/Prefabs/AirFryer.prefab
-  artifactKey: Guid(fbfe382c29a4ab547a520eb7084a534c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alstrainfinite/KitchenAppliances/Prefabs/AirFryer.prefab using Guid(fbfe382c29a4ab547a520eb7084a534c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b15f2cfd10554514e4d81116fbaad4a') in 0.029681 seconds
-  Import took 0.032374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Alstrainfinite/KitchenAppliances/Prefabs/Fridge.prefab
-  artifactKey: Guid(7b5ec1159cb969d4a8fe69fddc2f17d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alstrainfinite/KitchenAppliances/Prefabs/Fridge.prefab using Guid(7b5ec1159cb969d4a8fe69fddc2f17d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634df06da0e309a4347313e9a191c147') in 0.017474 seconds
-  Import took 0.020249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Alstrainfinite/KitchenAppliances/Prefabs/Dryer.prefab
-  artifactKey: Guid(eae26ab7edb22a54e8fab415ccacc23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alstrainfinite/KitchenAppliances/Prefabs/Dryer.prefab using Guid(eae26ab7edb22a54e8fab415ccacc23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9809f6251a639a7a033e7875c21d1b3e') in 0.023106 seconds
-  Import took 0.025971 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.693258 seconds.
-  path: Assets/Alstrainfinite/KitchenAppliances/Prefabs/Washer.prefab
-  artifactKey: Guid(f767cce13dd852b4cbd5894364ae969e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alstrainfinite/KitchenAppliances/Prefabs/Washer.prefab using Guid(f767cce13dd852b4cbd5894364ae969e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b862c1073ae11f5180873381d0c17cd2') in 0.025186 seconds
-  Import took 0.028252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 89.422880 seconds.
-  path: Assets/KitchenAppliances/Prefabs/Mixer.prefab
-  artifactKey: Guid(0bd166eac535dfd43bc28b43190b289a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Prefabs/Mixer.prefab using Guid(0bd166eac535dfd43bc28b43190b289a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207f31cb629c89a954b8327cd6bbe2e5') in 0.013394 seconds
-  Import took 0.017679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.240963 seconds.
-  path: Assets/KitchenAppliances/Prefabs/Stovetop.prefab
-  artifactKey: Guid(eb766ebb61571b14baf76b08c8426daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Prefabs/Stovetop.prefab using Guid(eb766ebb61571b14baf76b08c8426daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0fb6d4da430f0acc662eee6b720c55') in 0.048268 seconds
-  Import took 0.051915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.830883 seconds.
-  path: Assets/KitchenAppliances/Prefabs/FanV2.prefab
-  artifactKey: Guid(08d28eaef00b28b41aefefc354079323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Prefabs/FanV2.prefab using Guid(08d28eaef00b28b41aefefc354079323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179c4eb8b55f2a3fd4b5e6016f069f07') in 0.020480 seconds
-  Import took 0.024486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.573596 seconds.
-  path: Assets/KitchenAppliances/Prefabs/Fan.prefab
-  artifactKey: Guid(f14d1ac6dacfc0242bed295f91ed3591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Prefabs/Fan.prefab using Guid(f14d1ac6dacfc0242bed295f91ed3591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c97981de2efe6ce320c32d6afc5c8e') in 0.019914 seconds
-  Import took 0.022874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.167780 seconds.
-  path: Assets/KitchenAppliances/Prefabs/Fridge_SBS.prefab
-  artifactKey: Guid(51ed19930404371458e8d3152edbad78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Prefabs/Fridge_SBS.prefab using Guid(51ed19930404371458e8d3152edbad78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7e3c15dd7af8602d7b421df16a3824') in 0.025968 seconds
-  Import took 0.029178 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.303883 seconds.
-  path: Assets/KitchenAppliances/Models/Fridge.fbx
-  artifactKey: Guid(7791aa6beaaa15148b5287a0538526d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Models/Fridge.fbx using Guid(7791aa6beaaa15148b5287a0538526d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4fe57096328f3aec8e7cbdda849ed43') in 0.137331 seconds
-  Import took 0.140507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.553814 seconds.
-  path: Assets/KitchenAppliances/Models/FridgeSBS.fbx
-  artifactKey: Guid(b37603f8ea8ba83489df2180bfd8eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Models/FridgeSBS.fbx using Guid(b37603f8ea8ba83489df2180bfd8eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdc76e4077482657bb4a0b799a0be39') in 0.062160 seconds
-  Import took 0.065522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004378 seconds.
-  path: Assets/KitchenAppliances/Models/FridgeSBS.fbx
-  artifactKey: Guid(b37603f8ea8ba83489df2180bfd8eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Models/FridgeSBS.fbx using Guid(b37603f8ea8ba83489df2180bfd8eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdc76e4077482657bb4a0b799a0be39') in 0.035743 seconds
-  Import took 0.038723 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.611049 seconds.
-  path: Assets/KitchenAppliances/Models/Dryer.fbx
-  artifactKey: Guid(ea74eb1c1df4df74eb289c8040ea5b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KitchenAppliances/Models/Dryer.fbx using Guid(ea74eb1c1df4df74eb289c8040ea5b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e191f42fcc95768e6a8404182a1a296') in 0.084889 seconds
-  Import took 0.087810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.743034 seconds.
-  path: Assets/Furnitures/Dryer.fbx
-  artifactKey: Guid(ea74eb1c1df4df74eb289c8040ea5b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/Dryer.fbx using Guid(ea74eb1c1df4df74eb289c8040ea5b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8b3acaf8dc5f3280463a01b184248c') in 0.078331 seconds
-  Import took 0.081267 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.172551 seconds.
-  path: Assets/Furnitures/FridgeSBS.fbx
-  artifactKey: Guid(b37603f8ea8ba83489df2180bfd8eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/FridgeSBS.fbx using Guid(b37603f8ea8ba83489df2180bfd8eef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8263bcfedea221e6b2e5ef9b42f50f') in 0.046627 seconds
-  Import took 0.049716 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.907407 seconds.
-  path: Assets/SteamVR/Plugins
-  artifactKey: Guid(dfc0179b6675d054d8460e515ec19c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Plugins using Guid(dfc0179b6675d054d8460e515ec19c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91b41bb4fbd0fbc74c7ba55c6debdca') in 0.006143 seconds
-  Import took 0.009125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.321151 seconds.
-  path: Assets/SteamVR/OpenVRUnityXRPackage
-  artifactKey: Guid(6cd256751f738d645b7b64c556da3759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/OpenVRUnityXRPackage using Guid(6cd256751f738d645b7b64c556da3759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f618ff6814306e4bfc5b044a77791eba') in 0.005034 seconds
-  Import took 0.007938 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.276853 seconds.
-  path: Assets/SteamVR/Resources
-  artifactKey: Guid(40af2f692be87864ba388a27fcac9ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Resources using Guid(40af2f692be87864ba388a27fcac9ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55700c8cfbd85c5cf0c47674ede1e4d9') in 0.004959 seconds
-  Import took 0.007935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.459587 seconds.
-  path: Assets/SteamVR/Textures
-  artifactKey: Guid(abfc00e0350ad744083849e2d7ae06ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Textures using Guid(abfc00e0350ad744083849e2d7ae06ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d60d8da9bba99deda2c5d6578fb549') in 0.005027 seconds
-  Import took 0.007918 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.254661 seconds.
-  path: Assets/SteamVR/WindowsHelper
-  artifactKey: Guid(6af8d944026470c48ac90a7c192872bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/WindowsHelper using Guid(6af8d944026470c48ac90a7c192872bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8bbe3a22e5a2ba4cd63472d71798e5') in 0.004990 seconds
-  Import took 0.007855 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.302152 seconds.
-  path: Assets/SteamVR/Models
-  artifactKey: Guid(19ab935e9cd6f4f4d8cf203de711c870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Models using Guid(19ab935e9cd6f4f4d8cf203de711c870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4bef7ac4d9f790d449707f9d72d7a59') in 0.004689 seconds
-  Import took 0.007598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.372499 seconds.
-  path: Assets/SteamVR/KitchenAppliances
-  artifactKey: Guid(3a52b94a952878842ad6b6c4c2edaed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/KitchenAppliances using Guid(3a52b94a952878842ad6b6c4c2edaed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc6493c888a0c63b33f999c0a04f982') in 0.004623 seconds
-  Import took 0.007458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 236.643801 seconds.
-  path: Assets/SteamVR/KitchenAppliances/Models/Fridge.fbx
-  artifactKey: Guid(7791aa6beaaa15148b5287a0538526d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/KitchenAppliances/Models/Fridge.fbx using Guid(7791aa6beaaa15148b5287a0538526d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c198118edcee7fd2b3f80cd37294536') in 0.016612 seconds
-  Import took 0.020064 seconds .
+  path: Assets/Furniture.prefab
+  artifactKey: Guid(fe18118c2a9cb8a4695c9b80fc6906de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Furniture.prefab using Guid(fe18118c2a9cb8a4695c9b80fc6906de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52ef23b6e85bd0d39205b7f107f0123') in 0.183859 seconds
+  Import took 0.193427 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003783 seconds.
+Registered in 0.003866 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.926 seconds
+- Completed reload, in  1.098 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2073 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.5 MB.
-System memory in use after: 101.6 MB.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.5 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2591.
-Total: 1.850900 ms (FindLiveObjects: 0.172900 ms CreateObjectMapping: 0.071300 ms MarkObjects: 1.592900 ms  DeleteObjects: 0.013100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2993.797746 seconds.
-  path: Assets/Furnitures/Materials/map - Shortcut.lnk
-  artifactKey: Guid(bab5b3d79ac17f64baf5c8d6a5906c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/Materials/map - Shortcut.lnk using Guid(bab5b3d79ac17f64baf5c8d6a5906c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5723f6691af47694514e309af9d597c') in 0.097999 seconds
-  Import took 0.103016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.821053 seconds.
-  path: Assets/Furnitures/Washer.fbx
-  artifactKey: Guid(f1da24e6f87f419458e1913c5a2fe03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/Washer.fbx using Guid(f1da24e6f87f419458e1913c5a2fe03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8620d66190302a79d720af20ec3a769a') in 0.123962 seconds
-  Import took 0.126783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.476775 seconds.
-  path: Assets/Furnitures/Materials/Textures
-  artifactKey: Guid(f387bd4b2f3017b4b8baf1a0436db5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/Materials/Textures using Guid(f387bd4b2f3017b4b8baf1a0436db5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac1ec42e986cc0f453f1a1bbedd00f2') in 0.001934 seconds
-  Import took 0.005152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.358080 seconds.
-  path: Assets/SteamVR/Scripts 1
-  artifactKey: Guid(75e860143a800b945be31fe077cb63d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Scripts 1 using Guid(75e860143a800b945be31fe077cb63d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f440a74ed1973d761ced0dc1f2deebc') in 0.005854 seconds
-  Import took 0.009349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.341870 seconds.
-  path: Assets/SteamVR/Scripts
-  artifactKey: Guid(d88af1b1098a33a42bc43c910c864102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Scripts using Guid(d88af1b1098a33a42bc43c910c864102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a32fdc71b0652b7b8839ce2b76ef645e') in 0.005230 seconds
-  Import took 0.008700 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.996844 seconds.
-  path: Assets/SteamVR/readme.txt
-  artifactKey: Guid(a51c3dbd81ecb6741b7a2c5b06dbcb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/readme.txt using Guid(a51c3dbd81ecb6741b7a2c5b06dbcb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bf02738744568e174207b62b4c1691') in 0.007989 seconds
-  Import took 0.011038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.521043 seconds.
-  path: Assets/Materials/Player Scripts
-  artifactKey: Guid(d97307699a6a3f949ae2b9fe0cd14ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Player Scripts using Guid(d97307699a6a3f949ae2b9fe0cd14ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6b7f74c1e812cb3f903f8b786399a7') in 0.005535 seconds
-  Import took 0.008525 seconds .
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2574.
+Total: 1.950800 ms (FindLiveObjects: 0.241700 ms CreateObjectMapping: 0.083800 ms MarkObjects: 1.610300 ms  DeleteObjects: 0.014200 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004486 seconds.
+Registered in 0.004001 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.088 seconds
+Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.55 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.989 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.50 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2073 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.6 MB.
-System memory in use after: 101.7 MB.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.5 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2596.
-Total: 1.855500 ms (FindLiveObjects: 0.181200 ms CreateObjectMapping: 0.074000 ms MarkObjects: 1.586000 ms  DeleteObjects: 0.013400 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2578.
+Total: 2.137300 ms (FindLiveObjects: 0.327600 ms CreateObjectMapping: 0.082500 ms MarkObjects: 1.711600 ms  DeleteObjects: 0.014000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003810 seconds.
+Registered in 0.004013 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.978 seconds
+- Completed reload, in  1.065 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.4 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2582.
+Total: 1.884200 ms (FindLiveObjects: 0.182500 ms CreateObjectMapping: 0.073600 ms MarkObjects: 1.613000 ms  DeleteObjects: 0.013900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003943 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.49 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2073 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.6 MB.
-System memory in use after: 101.7 MB.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2600.
-Total: 1.943900 ms (FindLiveObjects: 0.169600 ms CreateObjectMapping: 0.070100 ms MarkObjects: 1.667800 ms  DeleteObjects: 0.035800 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2586.
+Total: 2.308100 ms (FindLiveObjects: 0.198300 ms CreateObjectMapping: 0.135200 ms MarkObjects: 1.958000 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004573 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.075 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2590.
+Total: 2.145700 ms (FindLiveObjects: 0.215800 ms CreateObjectMapping: 0.088900 ms MarkObjects: 1.824200 ms  DeleteObjects: 0.015600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004069 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.97 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2594.
+Total: 2.470500 ms (FindLiveObjects: 0.254300 ms CreateObjectMapping: 0.083800 ms MarkObjects: 2.088000 ms  DeleteObjects: 0.043500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004282 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.095 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2598.
+Total: 2.435000 ms (FindLiveObjects: 0.290600 ms CreateObjectMapping: 0.127200 ms MarkObjects: 2.000300 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004309 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.062 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2602.
+Total: 2.922400 ms (FindLiveObjects: 0.685500 ms CreateObjectMapping: 0.167700 ms MarkObjects: 2.050600 ms  DeleteObjects: 0.016500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004140 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.066 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2606.
+Total: 2.438800 ms (FindLiveObjects: 0.225100 ms CreateObjectMapping: 0.102900 ms MarkObjects: 2.092000 ms  DeleteObjects: 0.017700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004033 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.044 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2610.
+Total: 2.069800 ms (FindLiveObjects: 0.208600 ms CreateObjectMapping: 0.077900 ms MarkObjects: 1.767000 ms  DeleteObjects: 0.015400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003969 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.043 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.6 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2614.
+Total: 2.213500 ms (FindLiveObjects: 0.359700 ms CreateObjectMapping: 0.108800 ms MarkObjects: 1.728000 ms  DeleteObjects: 0.015600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004021 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.046 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2618.
+Total: 2.015200 ms (FindLiveObjects: 0.185500 ms CreateObjectMapping: 0.068100 ms MarkObjects: 1.743300 ms  DeleteObjects: 0.016900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004468 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.125 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.5 MB.
+System memory in use after: 103.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2622.
+Total: 3.755900 ms (FindLiveObjects: 0.612100 ms CreateObjectMapping: 0.155000 ms MarkObjects: 2.947000 ms  DeleteObjects: 0.039000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.071586 seconds.
-  path: Assets/klima2.3DS
-  artifactKey: Guid(3ba375b86098f7043a1295d485b9091f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/klima2.3DS using Guid(3ba375b86098f7043a1295d485b9091f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b689337be4e2ee916a9848db86d658b2') in 0.203510 seconds
-  Import took 0.206379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 90.191046 seconds.
-  path: Assets/SteamVR/KitchenAppliances/Models/Stovetop.fbx
-  artifactKey: Guid(01bb90b911a563f4997a757b1861c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/KitchenAppliances/Models/Stovetop.fbx using Guid(01bb90b911a563f4997a757b1861c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54fb3f18ed229b888fa53cb1be5a516') in 0.095086 seconds
-  Import took 0.098744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004026 seconds.
-  path: Assets/SteamVR/KitchenAppliances/Models/Stovetop.fbx
-  artifactKey: Guid(01bb90b911a563f4997a757b1861c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/KitchenAppliances/Models/Stovetop.fbx using Guid(01bb90b911a563f4997a757b1861c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54fb3f18ed229b888fa53cb1be5a516') in 0.067310 seconds
-  Import took 0.070416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 233.069740 seconds.
-  path: Assets/Furnitures/Washer.fbx
-  artifactKey: Guid(f1da24e6f87f419458e1913c5a2fe03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/Washer.fbx using Guid(f1da24e6f87f419458e1913c5a2fe03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea9eaa543d6caf0c81200dc5601d4a0') in 0.041747 seconds
-  Import took 0.045472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 99.986349 seconds.
-  path: Assets/Furnitures/Dryer.fbx
-  artifactKey: Guid(ea74eb1c1df4df74eb289c8040ea5b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/Dryer.fbx using Guid(ea74eb1c1df4df74eb289c8040ea5b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb221ce1fb817ae662a2d12c6857dab') in 0.093249 seconds
-  Import took 0.096268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 271.340733 seconds.
-  path: Assets/Furnitures/kitchen.dae
-  artifactKey: Guid(00e2b8942aec70546a7ab5b4db7c6afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/kitchen.dae using Guid(00e2b8942aec70546a7ab5b4db7c6afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49170d931c4035f7089d3fd38fd28ad4') in 1.006187 seconds
-  Import took 1.012479 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 143.369880 seconds.
-  path: Assets/Furnitures/kitchen.dae
-  artifactKey: Guid(00e2b8942aec70546a7ab5b4db7c6afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Furnitures/kitchen.dae using Guid(00e2b8942aec70546a7ab5b4db7c6afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dbfe09a1efb29030c82ef63dbf7a97') in 1.913067 seconds
-  Import took 1.919249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 866.857192 seconds.
-  path: Assets/kitchen.prefab
-  artifactKey: Guid(74eff27e7b3c2924fa3f6f021d84e1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/kitchen.prefab using Guid(74eff27e7b3c2924fa3f6f021d84e1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4037edec2649c7007650d97df4ea07') in 0.039367 seconds
-  Import took 0.044938 seconds .
+  Time since last request: 2510.289106 seconds.
+  path: Assets/Prefabs/Ally.prefab
+  artifactKey: Guid(b6c6838485c281f48a7ea929f7767493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ally.prefab using Guid(b6c6838485c281f48a7ea929f7767493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e3edb7e36281bb08326ade60e73ad4') in 0.361410 seconds
+  Import took 0.375166 seconds .
 
