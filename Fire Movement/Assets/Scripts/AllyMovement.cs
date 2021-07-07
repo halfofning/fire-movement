@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
-using UnityEngine.AI;
+using TMPro;
 
 public class AllyMovement : MonoBehaviour
 {
@@ -17,10 +17,16 @@ public class AllyMovement : MonoBehaviour
     public float allowedDistance;
     public RaycastHit hit;
 
+    public TextMeshProUGUI commandCountText;
+    public TextMeshProUGUI commandListText;
+
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
 
+    // To display
     private List<string> spokenWords; // stores all the words spoken
+    private int commandCount = 0;
+
     private string ally = "";
     private GameObject currAlly = null;
 
@@ -128,6 +134,8 @@ public class AllyMovement : MonoBehaviour
                 }
             }
         }
+
+        commandCountText.text = string.Format("%s", commandCount);
     }
 
     private void OnApplicationQuit()

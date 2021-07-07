@@ -55,6 +55,14 @@
       "requirement": "suggested"
     },
     {
+      "name": "/actions/default/in/MenuControlLeft",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MenuControlRight",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/platformer/in/Move",
       "type": "vector2"
     },
@@ -170,7 +178,9 @@
       "/actions/platformer/in/Jump": "Jump",
       "/actions/default/in/SnapTurnLeft": "Snap Turn (Left)",
       "/actions/default/in/SnapTurnRight": "Snap Turn (Right)",
-      "/actions/default/in/Move": "Move"
+      "/actions/default/in/Move": "Move",
+      "/actions/default/in/MenuControlLeft": "Menu Control (Left)",
+      "/actions/default/in/MenuControlRight": "Menu Control (Right)"
     }
   ]
 }

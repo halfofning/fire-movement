@@ -112,5 +112,21 @@ namespace Valve.VR
                 return SteamVR_Actions.default_Move;
             }
         }
+        
+        public virtual SteamVR_Action_Boolean MenuControlLeft
+        {
+            get
+            {
+                return SteamVR_Actions.default_MenuControlLeft;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean MenuControlRight
+        {
+            get
+            {
+                return SteamVR_Actions.default_MenuControlRight;
+            }
+        }
     }
 }
