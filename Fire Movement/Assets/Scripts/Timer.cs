@@ -5,49 +5,64 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timeValue = 120;
+    //public float timeValue;
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI timeElapsedText;
     public GameObject endScreen;
 
     private float timeElapsed = 0;
-    
+    //private float maxTime;
+    //public static bool isTimeRanOut = false;
+
+    //void Start()
+    //{
+    //    maxTime = timeValue;
+    //}
+
     void Update()
     {
-        if (timeValue > 0)
+        if (TimerTrigger.triggered)
         {
-            timeValue -= Time.deltaTime;
             timeElapsed += Time.deltaTime;
-        }
-        else
-        {
-            timeValue = 0;
-            timeElapsed = 120;
+
+            //if (timeValue > 0)
+            //{
+            //timeValue -= Time.deltaTime;
+            //}
+            //else
+            //{
+            //    timeValue = 0;
+            //    timeElapsed = maxTime;
+            //    isTimeRanOut = true;
+            //}
         }
 
-        DisplayTime(timeValue);
+        DisplayTime(timeElapsed);
     }
 
     void DisplayTime(float timeToDisplay)
     {
-        if (timeToDisplay < 0)
+        // Pop up when all rooms have been cleared
+        if (AllyMovement.roomsCleared == 5)
         {
-            timeToDisplay = 0;
-
-            // Pop up
             endScreen.SetActive(true);
             FormatAndDisplay(timeElapsed, timeElapsedText);
         }
-        else if (timeToDisplay > 0)
-        {
-            timeToDisplay += 1;
-        }
+
+        //if (timeToDisplay < 0)
+        //{
+        //timeToDisplay = 0;
+        //}
+        //else if (timeToDisplay > 0 && timeToDisplay != maxTime)
+        //{
+        //    timeToDisplay += 1;
+        //}
 
         // Change colour
-        if (timeToDisplay <= 15)
-        {
-            timeText.color = new Color32(210, 0, 0, 255);
-        }
+        //if (timeToDisplay < 16)
+        //{
+        //    timeText.color = new Color32(210, 0, 0, 255);
+        //}
 
         FormatAndDisplay(timeToDisplay, timeText);
     }

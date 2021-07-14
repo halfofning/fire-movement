@@ -6,6 +6,7 @@ TagManager:
   tags:
   - projectile
   - FxTemporaire
+  - Ally
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Hands
   - GrabbableHandler
   - Button
-  - 
+  - Ally
   - 
   - 
   - 

@@ -14,14 +14,5 @@ public class ChangeScene : MonoBehaviour
         }
 
         SceneManager.LoadScene(sceneName);
-
-        //if (sceneName == "Tutorial")
-        //{
-        //    player.transform.position = new Vector3(0f, 0f, 0f);
-        //    player.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-        //    Destroy(player);
-        //}
-
-
     }
 }
