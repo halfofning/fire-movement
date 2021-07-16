@@ -6,7 +6,6 @@ using TMPro;
 public class Grading : MonoBehaviour
 {
     public TextMeshProUGUI successText;
-
     public static bool success = true;
 
     void Update()
@@ -27,7 +26,6 @@ public class Grading : MonoBehaviour
             word = "SUCCESS";
         else
             word = "FAILURE";
-
     
         successText.text = string.Format("MISSION {0}!", word);
     }

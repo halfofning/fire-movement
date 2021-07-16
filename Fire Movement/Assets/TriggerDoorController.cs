@@ -7,6 +7,7 @@ public class TriggerDoorController : MonoBehaviour
     [SerializeField] private Animator myDoor = null;
     [SerializeField] private bool openTrigger = false;
     [SerializeField] private bool closeTrigger = false;
+    //private float deactivateTime = 20.0f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,13 +16,18 @@ public class TriggerDoorController : MonoBehaviour
             if (openTrigger)
             {
                 myDoor.Play("DoorOpen", 0, 0.0f);
-                //gameObject.SetActive(false);
-            } 
+                //StartCoroutine(TimeDeactivate(deactivateTime));
+            }
             else if (closeTrigger)
             {
                 myDoor.Play("DoorClose", 0, 0.0f);
-                gameObject.SetActive(false);
             }
         }
     }
+
+    //private IEnumerator TimeDeactivate(float time)
+    //{
+    //    yield return new WaitForSeconds(time);
+    //    myDoor.Play("DoorClose", 0, 0.0f);
+    //}
 }

@@ -15,13 +15,20 @@ public class Reticle2Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collided");
-        triggered = true;
-        particle.SetActive(false);
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("collided");
+            triggered = true;
+            particle.SetActive(false);
 
-        // Change reticle colour
-        GetComponent<MeshRenderer>().material = collidedMaterial;
+            // Change reticle colour
+            GetComponent<MeshRenderer>().material = collidedMaterial;
 
-        // TODO: Play some bell sound here to signal start of timer
+            // Set shoulder to be tappable when the next reticle is active: see ShoulderTap.cs
+            Debug.Log("Setting shoulder tap to be active");
+            ShoulderTap.isTappable = true;
+
+            // TODO: Play some bell sound here to signal start of timer
+        }
     }
 }

@@ -10,6 +10,10 @@ public class AllyMovement : MonoBehaviour
     public Transform player;
     public List<GameObject> allies;
     public List<GameObject> enemies;
+
+    public List<GameObject> ally1Movement;
+    public List<GameObject> ally2Movement;
+    public List<GameObject> ally3Movement;
     
     public float speed;
     public float targetDistance;
@@ -19,6 +23,7 @@ public class AllyMovement : MonoBehaviour
     public TextMeshProUGUI commandCountText;
     public TextMeshProUGUI commandListText;
     public TextMeshProUGUI gradeText;
+    public TextMeshProUGUI roomsLeftToClear;
 
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
@@ -33,10 +38,16 @@ public class AllyMovement : MonoBehaviour
 
     //private int layerMask = 1 << 9;
 
-    public static int roomsCleared = 0;
+    public int roomsLeft;
+    public static int _roomsLeft;
 
     private Vector3 playerPosition;
     private int numOfAllies = 3;
+
+    private void Awake()
+    {
+        _roomsLeft = roomsLeft;
+    }
 
     private void Start()
     {
@@ -99,13 +110,15 @@ public class AllyMovement : MonoBehaviour
     private void RoomClear()
     {
         // When this command is activated, the room is cleared.
-        
         // Mark the room as completed
+        roomsLeft--;
     }
 
     private void ApartmentClear()
     {
-
+        // When this command is activated, the apartment is cleared.
+        // Mark the room as completed.
+        roomsLeft--;
     }
 
     private void Cover()
@@ -127,58 +140,9 @@ public class AllyMovement : MonoBehaviour
         // TODO: Record: No IED, no booby trap, door swing inwards.
     }
 
-    // Respawn allies behind user
-    private void RespawnFirst()
-    {
-        // Calculate ally x and z position based on where player is at
-        // Get middle ally
-        int midIndex = (int)Math.Ceiling((double)(numOfAllies - 1) / 2);
-        GameObject middle = allies[midIndex];
-
-        middle.transform.position = new Vector3(playerPosition.x, 0, playerPosition.z - 0.5f);
-
-        // For allies on the left side of mid
-        for (int i = 0; i < midIndex; i++)
-        {
-            GameObject leftAlly = allies[i];
-            leftAlly.transform.position = new Vector3(middle.transform.position.x - (midIndex - i) + 0.7f, middle.transform.position.y, middle.transform.position.z);
-        }
-
-        // For allies on the right side of mid
-        for (int i = midIndex + 1; i < numOfAllies; i++)
-        {
-            GameObject rightAlly = allies[i];
-            rightAlly.transform.position = new Vector3(middle.transform.position.x + (i - midIndex) - 0.7f, middle.transform.position.y, middle.transform.position.z);
-        }
-    }
-
-    // Third man moves towards the door when tapped by hand.
-    private void ThirdMoveTowardsDoor()
-    {
-        //currAlly.transform.LookAt
-    }
-
+    // Grades are assigned based on completeness of commands
     void AssignGrades()
     {
-        switch (roomsCleared)
-        {
-            case 1:
-                grade = "F";
-                break;
-            case 2:
-                grade = "D";
-                break;
-            case 3:
-                grade = "C";
-                break;
-            case 4:
-                grade = "B";
-                break;
-            case 5:
-                grade = "A";
-                break;
-        }
-
         gradeText.text = String.Format("{0}", grade);
     }
 
@@ -195,8 +159,9 @@ public class AllyMovement : MonoBehaviour
         playerPosition = player.transform.position;
 
         // Respawn allies behind user when the first reticle is stepped on
-        if (TimerTrigger.triggered && !updated) {
-            RespawnFirst();
+        if (TimerTrigger.triggered && !updated)
+        {
+            moveToStartingPositions();
             updated = true;
         }
 
@@ -237,11 +202,26 @@ public class AllyMovement : MonoBehaviour
         // Display text
         AssignGrades();
         DisplayText(commandCount, commandList);
+        roomsLeftToClear.text = String.Format("{0}", _roomsLeft);
 
         //foreach (string str in commandList)
         //{
         //    commandListText.text = string.Format("%s\n", str);
         //}
+    }
+
+    // Respawn allies behind user
+    public void moveToStartingPositions()
+    {
+        // Allies positions are preassigned based on the lists created above:
+        // ally1Movement, ally2Movement, ally3Movement
+
+        // When player first steps onto the reticle, move the allies to their starting positions
+        allies[0].transform.position = ally1Movement[0].transform.position;
+        allies[1].transform.position = ally2Movement[0].transform.position;
+        allies[2].transform.position = ally3Movement[0].transform.position;
+
+        allies[2].transform.rotation = Quaternion.Euler(0, 130, 0);
     }
 
     private void OnApplicationQuit()
