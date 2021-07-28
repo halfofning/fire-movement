@@ -10,12 +10,6 @@ public class Grading : MonoBehaviour
 
     void Update()
     {
-        // Mission is a failure if the timer runs out
-        //if (Timer.isTimeRanOut)
-        //{
-            //success = false;
-        //}
-
         DisplayText();
     }
 

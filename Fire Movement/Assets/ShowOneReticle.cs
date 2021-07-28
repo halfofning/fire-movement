@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShowOneReticle : MonoBehaviour
 {
     public List<GameObject> reticles;
-    public Material roomClearMaterial;
+    //public Material roomClearMaterial;
 
     private int currReticleNo = 0;
 
@@ -23,8 +23,6 @@ public class ShowOneReticle : MonoBehaviour
         // Set current reticle as active;
         reticles[currReticleNo].SetActive(true);
 
-        Debug.Log(currReticleNo);
-
         // currReticleNo shows the current active reticle.
         // The next reticle will only appear when the current room is cleared.
         // When the current room is cleared, change the reticle material.
@@ -32,37 +30,42 @@ public class ShowOneReticle : MonoBehaviour
         switch (currReticleNo)
         {
             case 0:
-                if (Reticle1Trigger.triggered && AllyMovement._roomsLeft == 4)
+                if (AllyMovement._roomsLeft == 4)
                 {
-                    reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    //reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    reticles[currReticleNo].SetActive(false);
                     currReticleNo = 1;
                 }
                 break;
             case 1:
-                if (Reticle2Trigger.triggered && AllyMovement._roomsLeft == 3)
+                if (AllyMovement._roomsLeft == 3)
                 {
-                    reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    //reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    reticles[currReticleNo].SetActive(false);
                     currReticleNo = 2;
                 }
                 break;
             case 2:
-                if (Reticle3Trigger.triggered && AllyMovement._roomsLeft == 2)
+                if (AllyMovement._roomsLeft == 2)
                 {
-                    reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    //reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    reticles[currReticleNo].SetActive(false);
                     currReticleNo = 3;
                 }
                 break;
             case 3:
-                if (Reticle4Trigger.triggered && AllyMovement._roomsLeft == 1)
+                if (AllyMovement._roomsLeft == 1)
                 {
-                    reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    //reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    reticles[currReticleNo].SetActive(false);
                     currReticleNo = 4;
                 }
                 break;
             case 4:
-                if (Reticle5Trigger.triggered && AllyMovement._roomsLeft == 0)
+                if (AllyMovement._roomsLeft == 0)
                 {
-                    reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    //reticles[currReticleNo].GetComponent<MeshRenderer>().material = roomClearMaterial;
+                    reticles[currReticleNo].SetActive(false);
                     Grading.success = true;
                 }
                 break;

@@ -7,7 +7,7 @@ public class TriggerDoorController : MonoBehaviour
     [SerializeField] private Animator myDoor = null;
     [SerializeField] private bool openTrigger = false;
     [SerializeField] private bool closeTrigger = false;
-    //private float deactivateTime = 20.0f;
+    private float deactivateTime = 15f;
 
     private void OnTriggerEnter(Collider other)
     {

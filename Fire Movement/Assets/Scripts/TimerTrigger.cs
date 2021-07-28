@@ -8,16 +8,27 @@ public class TimerTrigger : MonoBehaviour
     public static bool triggered = false;
     public GameObject particle;
     public Material collidedMaterial;
+    public AudioClip bellJingleSound;
+
+    private bool played = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collided");
-        triggered = true;
-        particle.SetActive(false);
+        if (other.CompareTag("Player") && !played)
+        {
+            Debug.Log("collided");
+            triggered = true;
+            particle.SetActive(false);
 
-        // Change reticle colour
-        GetComponent<MeshRenderer>().material = collidedMaterial;
+            // Change reticle colour
+            GetComponent<MeshRenderer>().material = collidedMaterial;
 
-        // TODO: Play some bell sound here to signal start of timer
+            // Play some bell sound here to signal start of timer
+            if (!played)
+            {
+                AudioSource.PlayClipAtPoint(bellJingleSound, transform.position);
+                played = true;
+            }
+        }
     }
 }

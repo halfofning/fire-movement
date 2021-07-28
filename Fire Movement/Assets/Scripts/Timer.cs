@@ -11,16 +11,10 @@ public class Timer : MonoBehaviour
     public GameObject endScreen;
 
     private float timeElapsed = 0;
-    //private float maxTime;
-    //public static bool isTimeRanOut = false;
-
-    //void Start()
-    //{
-    //    maxTime = timeValue;
-    //}
 
     void Update()
     {
+        // TODO: Stop timer when canvas is active
         if (TimerTrigger.triggered)
         {
             timeElapsed += Time.deltaTime;

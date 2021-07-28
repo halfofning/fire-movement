@@ -7,15 +7,13 @@ public class Reticle5Trigger : MonoBehaviour
     public static bool triggered = false;
     public GameObject particle;
     public Material collidedMaterial;
+    public AudioClip bellJingleSound;
 
-    private void Update()
-    {
-        particle.SetActive(gameObject.activeSelf);
-    }
+    private bool played = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !played)
         {
             Debug.Log("collided");
             triggered = true;
@@ -24,11 +22,14 @@ public class Reticle5Trigger : MonoBehaviour
             // Change reticle colour
             GetComponent<MeshRenderer>().material = collidedMaterial;
 
-            // Set shoulder to be tappable when the next reticle is active: see ShoulderTap.cs
-            Debug.Log("Setting shoulder tap to be active");
-            ShoulderTap.isTappable = true;
+            // Play some bell sound here
+            if (!played)
+            {
+                AudioSource.PlayClipAtPoint(bellJingleSound, transform.position);
+                played = true;
+            }
 
-            // TODO: Play some bell sound here to signal start of timer
+            ShoulderTap.isTappable = true;
         }
     }
 }

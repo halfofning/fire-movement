@@ -16,14 +16,16 @@ public class ShoulderTap : MonoBehaviour
     private void Start()
     {
         totalDoors = targetDoors.Count;
+        foreach (GameObject target in targetDoors)
+        {
+            target.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered but " + isTappable);
         if (other.CompareTag("Player") && isTappable)
         {
-            Debug.Log("shoulder tap");
             tapped = true;
         }
     }
@@ -40,12 +42,10 @@ public class ShoulderTap : MonoBehaviour
     private void ThirdMoveTowardsDoor()
     {
         GameObject targetDoor = targetDoors[currTargetDoor];
+        targetDoor.SetActive(true);
 
         thirdAlly.GetComponent<Animator>().Play("Rifle Walk");
         thirdAlly.transform.position = Vector3.MoveTowards(thirdAlly.transform.position, targetDoor.transform.position, speed * Time.deltaTime);
-
-        //Debug.Log(Vector3.Distance(thirdAlly.transform.position, targetDoor.transform.position));
-        Debug.Log(Vector3.kEpsilon);
 
         if (Vector3.Distance(thirdAlly.transform.position, targetDoor.transform.position) < Vector3.kEpsilon)
         {
@@ -58,6 +58,7 @@ public class ShoulderTap : MonoBehaviour
             isTappable = false;
 
             // If already opened the door, change the next targetDoor to open
+            //targetDoor.SetActive(false);
             currTargetDoor++;
         }
     }
