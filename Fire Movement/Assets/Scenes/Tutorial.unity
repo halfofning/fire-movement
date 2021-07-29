@@ -1186,8 +1186,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "You will play as a section commander. \n\nThe objective of this scenario
-    is to apprehend all enemies inside and reduce the number of casualties.\n\n3
-    / 10"
+    is to clear the whole apartment using basic room clearing techniques.\n\n3 /
+    10"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56eaf2d8269838748b7d72a29a302469, type: 2}
   m_sharedMaterial: {fileID: -7804451114602295946, guid: 56eaf2d8269838748b7d72a29a302469, type: 2}
@@ -3254,7 +3254,7 @@ MonoBehaviour:
 
 
     For this scenario, clear all rooms in
-    the apartment. The scenario will end when you say "STOP SIMULATION".
+    the apartment. The scenario will end when you finish clearing all the rooms.
 
 
     10
